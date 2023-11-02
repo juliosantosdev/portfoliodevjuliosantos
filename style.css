@@ -14,7 +14,6 @@ body {
 }
 
 /* Menu */
-
 header {
     background-color: black;
     box-shadow: 0px 3px 10px #464646;
@@ -61,8 +60,8 @@ header {
 }
 
 /* Houver dos Itens do Menu */
-.nav-link:hover {
-    color: #23AEEB;
+        .nav-link:hover {
+        color: #23AEEB;
 }
 
 
@@ -74,9 +73,8 @@ header {
 }
 
 /*Botão Whatsapp */
-.whats {
+    .whats {
     position: fixed; bottom: 40px; right: 50px; 
-   
     z-index: 9999;
 }
 
@@ -133,17 +131,17 @@ header {
 /* Houver do Botão de Orçamento */
 
 /*menu mobile */
-.mobile-menu-icon {
+    .mobile-menu-icon {
         display: none;
     }
 
 
-.mobile-menu {
+    .mobile-menu {
         display: none;
     }
 
     /*Botão Orçamento */
-.login-button {
+    .login-button {
     display: inline-block;
     padding: 12px 24px;
     border: 1px solid #4f4f4f;
@@ -238,12 +236,13 @@ header {
 
 
 
-.txt-topo-site {
-    color: #ffffff;
-}
+
 
 
 /* Estilo do Main */
+.txt-topo-site {
+    color: #ffffff;
+}
 
 section.topo-do-site {
     padding: 40px 4%;
@@ -276,7 +275,6 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
     font-size: 30px;
     margin: 40px 0;
-    text-align: justify;
 }
 
 .topo-do-site .img-topo-site img{
@@ -286,8 +284,20 @@ section.topo-do-site .flex {
 
 }
 
-/* Especialidades*/
+/* Consulta de mídia para diminuir o tamanho da fonte quando a largura da tela for menor ou igual a 1020px */
+@media (max-width: 1020px) {
+    .topo-do-site h1 {
+        font-size: 50px; /* Altere para o tamanho desejado */
+        line-height: 58px; /* Altere para o tamanho desejado */
+    }
 
+    .topo-do-site .txt-topo-site p {
+        font-size: 20px; /* Altere para o tamanho desejado */
+    }
+}
+
+
+/* Especialidades*/
 .flex {
     justify-content: center;
 }
@@ -344,9 +354,6 @@ section.especialidades .flex {
 }
 
 /*Estilo Sobre*/
-
-
-
 .video-sobre video {
     box-shadow: 5px 5px 20px #000000;
     margin-left: px;
@@ -357,11 +364,9 @@ section.especialidades .flex {
 
 section.sobre {
     padding: 150px 4%;
-    
 }
 
 section.sobre .flex {
-    
     align-items: center;
     gap: 100px;
 }
@@ -378,15 +383,14 @@ section.sobre .flex {
 
 .sobre .txt-sobre h2 span {
     color: #000000;
-    
 }
 
 .sobre .txt-sobre p {
-    font-size: 23px;
-    margin: 20px 0;
-    text-align: justify;
-}
 
+    font-size: 20px;
+    margin: 20px 0;
+    white-space: pre-line; /* Adicionado para preservar quebras de linha e espaços */
+}
 .btn-social button {
     width: 60px;
     height: 60px;
@@ -405,7 +409,6 @@ section.sobre .flex {
 }
 
 /* Hover botão whatsapp */
-
 .btn-social button, .whats {
     width: 50px;
     height: 50px;
@@ -448,7 +451,6 @@ section.sobre .flex {
 }
 
 /* Estilo do Portfolio */
-
 section.portfolio{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #3030301d;
@@ -474,7 +476,6 @@ section.portfolio .flex {
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
-
 section.formulario{
     padding: 80px 4%;
 }
@@ -530,8 +531,7 @@ form .btn-enviar input:hover {
     color: #fff; /* Cor da letra branca após o hover */
 }
 
-    /* Estilo do Rodape */
-
+/* Estilo do Rodape */
     footer{
         padding: 40px 4%;
         box-shadow: 0 0 40px 10px #464646;
@@ -560,7 +560,7 @@ form .btn-enviar input:hover {
     }
  
 
-/* responsividade */
+    /* responsividade */
 
 @media screen and (max-width: 1020px) {
 
@@ -574,7 +574,7 @@ form .btn-enviar input:hover {
         line-height: 30px;
     }
 
-    /* Menu do site*/
+/* Menu do site*/
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -590,7 +590,7 @@ form .btn-enviar input:hover {
         display: none;
     }
 
-    /* Menu do site no celular*/
+/* Menu do site no celular*/
     .mobile-menu-icon {
         display: block;
     }
@@ -618,7 +618,7 @@ form .btn-enviar input:hover {
         display: block;
     }
 
-    /* Main */ 
+/* Main */ 
     section.topo-do-site .flex{
         gap: 40px;
     }
@@ -628,37 +628,45 @@ form .btn-enviar input:hover {
     }
 
     .txt-topo-site h1{        
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 30px;
     }
+
+    
 
     .topo-do-site .img-topo-site img{
         width: 100%;
     }
 
-    /* Sobre */
+ /* Sobre */
 
-    section.sobre {
-        padding: 80px 8%;
-        
-    }
+        section.sobre {
+            padding: 80px 8%;
+            
+        }
+    
+        .sobre .txt-sobre h2 {
+            font-size: 34px;
+            line-height: 35px;
+            text-align: center;
+        }
+    
+        .txt-sobre p {
+            font-size: 18px; /* Altere para o tamanho desejado */
+            white-space: normal; /* Adicionado para permitir quebras de linha automáticas */
+            white-space: pre-line;
+        }
+    
+        .btn-social{
+            text-align: center;
+        }
+    
+        .img-sobre img {
+            display: none;
+            width: 100%;
+        }
 
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
-        text-align: center;
-    }
-
-    .btn-social{
-        text-align: center;
-    }
-
-    .img-sobre img {
-        display: none;
-        width: 100%;
-    }
-
-    /* Portfolio */
+/* Portfolio */
 
     section.portfolio {
         padding: 80px 8%;
