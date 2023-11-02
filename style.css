@@ -356,7 +356,7 @@ section.especialidades .flex {
 /*Estilo Sobre*/
 .video-sobre video {
     box-shadow: 5px 5px 20px #000000;
-    margin-left: px;
+    
     border-radius: 20px;   
     width: 300px;
 }
