@@ -349,7 +349,7 @@ section.especialidades .flex {
 
 .video-sobre video {
     box-shadow: 5px 5px 20px #000000;
-    margin-left: 40px;
+    margin-left: px;
     border-radius: 20px;   
     width: 300px;
 }
