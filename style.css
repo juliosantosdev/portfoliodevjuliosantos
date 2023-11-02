@@ -49,6 +49,7 @@ header {
 
 .nav-item {
     margin: 0 30px;
+    padding-top: 10px;
 }
 
 .nav-link {
@@ -130,28 +131,14 @@ header {
 }
 
 /* Houver do Botão de Orçamento */
-.login-button:hover {
-    color: #ffffff;
-    border: 1px solid #31689b;
-}
 
-.login-button:hover:before {
-    top: -35%;
-    background-color: #000000;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.login-button:hover:after {
-    top: -45%;
-    background-color: #23AEEB;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-    .mobile-menu-icon {
+/*menu mobile */
+.mobile-menu-icon {
         display: none;
     }
 
-    .mobile-menu {
+
+.mobile-menu {
         display: none;
     }
 
@@ -209,7 +196,6 @@ header {
 .menu-login-butto:hover {
     color: #000000;
     border: 1px solid #23AEEB;
-    
 }
 
 .menu-login-butto:hover:before {
@@ -223,6 +209,32 @@ header {
     background-color: #23AEEB;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
+
+.menu-login-butto:hover a {
+    color: #ffffff; /* Cor da letra branca após o hover */
+}
+
+.login-button:hover {
+    color: #ffffff; /* Cor da letra branca após o hover */
+    border-color:#ffffff; /* Cor da borda branca após o hover */
+}
+
+.login-button:hover:before {
+    top: -35%;
+    background-color: #000000;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.login-button:hover:after {
+    top: -45%;
+    background-color: #23AEEB;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.login-button:hover a {
+    color: #ffffff; /* Cor da letra branca após o hover */
+}
+
 
 
 
@@ -336,10 +348,12 @@ section.especialidades .flex {
 
 
 .video-sobre video {
-    padding-left: 50px;
-    width: 300px
-    
+    box-shadow: 5px 5px 20px #000000;
+    margin-left: 40px;
+    border-radius: 20px;   
+    width: 300px;
 }
+
 
 section.sobre {
     padding: 150px 4%;
@@ -347,8 +361,9 @@ section.sobre {
 }
 
 section.sobre .flex {
+    
     align-items: center;
-    gap: 60px;
+    gap: 100px;
 }
 
 .sobre .txt-sobre{
