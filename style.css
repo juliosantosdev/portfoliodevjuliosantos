@@ -317,7 +317,7 @@ h2.titulo span {
 }
 
 section.especialidades {
-    padding: 40px 4%;
+    padding: 20px ;
     text-align: center;
     justify-content: center;
     padding-top: 90px;
@@ -334,6 +334,7 @@ section.especialidades .flex {
     border: 2px solid #fff;
     margin-top: 45px;
     transition: .2s;
+    
 }
 
 .especialidades .especialidades-box:hover {
@@ -573,7 +574,6 @@ footer .line-footer p a {
 }
 
 /* responsividade */
-
 @media screen and (max-width: 1020px) {
 
     /* Geral */
@@ -636,12 +636,17 @@ footer .line-footer p a {
         padding: 20px 8%;
     }
 
+    .topo-do-site .txt-topo-site p {
+        
+        margin: 10px 0;
+    }
+
     .txt-topo-site h1 {
         font-size: 22px;
         line-height: 30px;
+        padding-top: 50px;
+        text-align: center;
     }
-
-
 
     .topo-do-site .img-topo-site img {
         width: 100%;
@@ -664,6 +669,8 @@ footer .line-footer p a {
         text-align: center;
     }
 
+  
+
     .txt-sobre p {
         font-size: 18px;
         /* Altere para o tamanho desejado */
@@ -680,6 +687,16 @@ footer .line-footer p a {
         display: none;
         width: 100%;
     }
+
+    /* Especialidades*/
+
+    section.especialidades {
+        padding: px ;
+       
+    }
+
+
+
 
     /* Portfolio */
 
@@ -707,9 +724,14 @@ footer .line-footer p a {
         text-align: center;
     }
 
+    .btn-social {
+        padding-top: 20px;
+    }
+
     .formulario {
         text-align: center;
 
 
+    
     }
 }
