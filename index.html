@@ -128,13 +128,13 @@
                         <p> Sou um profissional da área de tecnologia. Um Desenvolvedor Front-end certificado, com diversos cursos em instituições como SENAC, Codi Academy e Udemy onde pude aprimorar minha experiência em HTML5, CSS3, JavaScript, Wordpress e entre outras tecnologias. Além disso, estou me formando na faculdade de Análise e Desenvolvimento de Sistemas, onde aprendo ainda mais sobre as técnicas e teorias da minha profissão. Estou aqui para transformar sua ideia em solução digital para sua empresa, com código limpo e um site responsivo, que se adapta a todas as telas! Se quiser conhecer mais sobre meu trabalho, logo abaixo estão algumas das minhas redes-sociais:
                         </p>
                         <div class="btn-social">
-                            <a href="https://instagram.com/juliosantos.dev"><button><i
+                            <a href="https://instagram.com/juliosantos.dev" target="_blank"><button><i
                                         class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/júlio-santos-2451a21b5/"><button><i
+                            <a href="https://www.linkedin.com/in/júlio-santos-2451a21b5/" target="_blank"><button><i
                                         class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/juliosantosdev/"><button><i
+                            <a href="https://github.com/juliosantosdev/" target="_blank"><button><i
                                         class="bi bi-github"></i></button></a>
-                            <a href="https://wa.me/message/5YKR3XKU5IBNI1"><button><i
+                            <a href="https://wa.me/message/5YKR3XKU5IBNI1" target="_blank"><button><i
                                         class="bi bi-whatsapp"></i></button></a>
 
                         </div>
@@ -162,13 +162,16 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="https://formsubmit.co/juliosantosjf32@gmail.com" method="post">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:" required>
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="ccda1a8a-c8ae-4d72-9282-c87675c373af">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"> <!-- Optional -->
+        
+                    <input type="text" name="$nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="text" name="$email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="$celular" id="celular" placeholder="Seu celular:" required>
+                    <textarea name="message" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    
+                                      
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
                     </div>

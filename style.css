@@ -545,11 +545,34 @@ form .btn-enviar input:hover {
     /* Cor da letra branca após o hover */
 }
 
+/*Estilo Obrigado */
+.btn-voltarinicio{
+    padding-top: 40px;
+}
+
+
 /* Estilo do Rodape */
+.site-content {
+    flex: 1 0 auto;
+    padding-top: 150px;
+}
+.footer {
+    flex-shrink: 0;
+}
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
 footer {
+    width: auto;
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #464646;
     background-color: #000;
+    flex-shrink: 0;
+    
 }
 
 footer .flex {
@@ -560,9 +583,6 @@ footer .line-footer {
     padding: 20px 0;
 }
 
-.borda {
-    border-top: 2px solid #23AEEB;
-}
 
 footer .line-footer p i {
     color: #fff;
