@@ -830,6 +830,7 @@ footer .line-footer p a {
         font-size: 19px;
         line-height: 35px;
         text-align: center;
+        text-align: justify;
 
         
     }
@@ -839,7 +840,8 @@ footer .line-footer p a {
     .txt-sobre p {
         font-size: 15px;
         /* Altere para o tamanho desejado */
-        white-space: pre-line;
+        text-align: justify;
+
         /* Adicionado para permitir quebras de linha automáticas */
     
         
