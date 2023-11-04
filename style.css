@@ -1,30 +1,23 @@
-/* Importa as fontes 'Archivo Black' e 'Jost' do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:wght@300;500&display=swap');
 
-/* Define o padding e a margem de todos os elementos como 0, e define a fonte padrão como 'Jost' */
 * {
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
 
-
-
-/* Define a cor de fundo do corpo do documento como #23AEEB */
 body {
     background-color: #23AEEB;
 }
 
+
+
 /* Menu */
-/* Define a cor de fundo do cabeçalho como preto, adiciona uma sombra, e faz com que ele fique por cima de outros elementos */
 header {
     background-color: black;
     box-shadow: 0px 3px 10px #464646;
-    z-index: 1; /* Adicionado para fazer o header ficar por cima de outros elementos */
-    position: relative; /* Necessário para o z-index funcionar */
 }
 
-/* Define o display da barra de navegação como flex, justifica o conteúdo para que haja espaço entre os itens, e adiciona padding */
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -32,33 +25,28 @@ header {
 }
 
 /* Logo do Menu */
-/* Define o display do logo como flex e alinha os itens ao centro */
 .logo {
     display: flex;
     align-items: center;
 }
 
 /* Itens do Menu */
-/* Define o display da lista de navegação como flex e alinha os itens ao centro */
 .nav-list {
     display: flex;
     align-items: center;
 }
 
-/* Define o display da lista não ordenada dentro da lista de navegação como flex, justifica o conteúdo ao centro, e remove os marcadores de lista */
 .nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-/* Define a margem e o padding-top dos itens de navegação */
 .nav-item {
     margin: 0 30px;
     padding-top: 10px;
 }
 
-/* Remove a decoração de texto dos links de navegação, define o tamanho da fonte, a cor do texto, e o peso da fonte */
 .nav-link {
     text-decoration: none;
     font-size: 1.35rem;
@@ -67,12 +55,12 @@ header {
 }
 
 /* Houver dos Itens do Menu */
-/* Define a cor do texto dos links de navegação quando o mouse passa sobre eles como #23AEEB */
 .nav-link:hover {
     color: #23AEEB;
 }
 
-/* Define a posição, a cor de fundo, e a transformação do pseudo-elemento after dos links de navegação quando o mouse passa sobre eles */
+
+
 .nav-link:hover:after {
     top: -45%;
     background-color: #23AEEB;
@@ -80,7 +68,6 @@ header {
 }
 
 /*Botão Whatsapp */
-/* Define a posição, a posição inferior, a posição direita, o z-index, e a animação do botão do WhatsApp */
 .whats {
     position: fixed;
     bottom: 40px;
@@ -90,7 +77,6 @@ header {
 }
 
 /*Botão Orçamento */
-/* Define o display, o padding, a borda, o raio da borda, a transição, a posição, o overflow, o tamanho da fonte, a cor do texto, e o z-index do botão de login */
 .login-button {
     display: inline-block;
     padding: 12px 24px;
@@ -104,14 +90,12 @@ header {
     z-index: 1;
 }
 
-/* Remove a decoração de texto dos links do botão de login, define a cor do texto, e o peso da fonte */
 .login-button a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
 }
 
-/* Define o conteúdo, a posição, a posição esquerda, a transformação, a posição superior, a largura, a altura, a cor de fundo, o raio da borda, o display, a transição, e o z-index do pseudo-elemento before do botão de login */
 .login-button:before {
     content: "";
     position: absolute;
@@ -127,7 +111,6 @@ header {
     z-index: -1;
 }
 
-/* Define o conteúdo, a posição, a posição esquerda, a transformação, a posição superior, a largura, a altura, a cor de fundo, o raio da borda, o display, a transição, e o z-index do pseudo-elemento after do botão de login */
 .login-button:after {
     content: "";
     position: absolute;
@@ -143,7 +126,6 @@ header {
     z-index: -1;
 }
 
-
 /* Houver do Botão de Orçamento */
 
 /*menu mobile */
@@ -157,7 +139,7 @@ header {
 }
 
 /*Botão Orçamento */
-.login-button  {
+.login-button {
     display: inline-block;
     padding: 12px 24px;
     border: 1px solid #4f4f4f;
@@ -168,7 +150,6 @@ header {
     font-size: 19px;
     color: black;
     z-index: 1;
-    
 }
 
 .login-button a {
@@ -261,10 +242,6 @@ header {
 
 
 /* Estilo do Main */
-.topo-do-site .login-button {
-    animation: slideDown 2s ease-out;
-}
-
 .txt-topo-site {
     color: #ffffff;
 }
@@ -284,12 +261,13 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-    font-size: 62px;
+    font-size: 59px;
     line-height: 70px;
-    overflow: hidden;
-    border-right: .15em solid orange;
+    overflow: hidden; /* Garante que o texto fique oculto até ser "digitado" */
+    border-right: .15em solid orange; /* Simula o cursor piscando */
     white-space: nowrap;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    
 }
 
 /* Animação de digitação */
@@ -304,6 +282,7 @@ section.topo-do-site .flex {
     50% { border-color: orange; }
 }
 
+
 .img-topo-site {
     border-radius: 80px;
 }
@@ -316,26 +295,14 @@ section.topo-do-site .flex {
     color: #ffffff;
     font-size: 30px;
     margin: 40px 0;
-    animation: slideInFromLeft 2s ease-out;
+    
 }
 
 .topo-do-site .img-topo-site img {
 
     position: relative;
-    animation: fadeIn 3s ease-out;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
-
-/* Animação de deslizamento de cima para baixo */
-@keyframes slideDown {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
 /* Consulta de mídia para diminuir o tamanho da fonte quando a largura da tela for menor ou igual a 1020px */
 @media (max-width: 1020px) {
@@ -362,12 +329,8 @@ h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
-    
-
+    padding-top: ;
 }
-
-
-
 
 h2.titulo span {
     color: #000000;
@@ -378,7 +341,6 @@ section.especialidades {
     text-align: center;
     justify-content: center;
     padding-top: 90px;
-  
 }
 
 section.especialidades .flex {
@@ -420,19 +382,8 @@ section.especialidades .flex {
 
     border-radius: 20px;
     width: 300px;
-    animation: slideInFromLeft 2s ease-out;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 section.sobre {
     padding: 150px 4%;
@@ -446,29 +397,14 @@ section.sobre .flex {
 .sobre .txt-sobre {
     color: #fff;
     text-align: justify;
-    
+
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 75px;
-    
+    font-size: 60px;
+    line-height: 40px;
     margin-bottom: 30px;
-    overflow: hidden; /* Garante que o texto fique oculto até ser "digitado" */
-    border-right: .15em solid orange; /* Simula o cursor piscando */
-    white-space: nowrap; /* Mantém o texto em uma única linha */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-/* Animação de digitação */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* Animação do cursor piscando */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(13, 219, 209); }
+    
 }
 
 .sobre .txt-sobre h2 span {
@@ -479,8 +415,10 @@ section.sobre .flex {
 
     font-size: 20px;
     margin: 20px 0;
-    animation: flutuar 2s ease-in-out infinite alternate, slideInFromRight 2s ease-out;
+
 }
+
+
 
 .btn-social button {
     width: 60px;
@@ -499,18 +437,6 @@ section.sobre .flex {
     box-shadow: 0px 0px 8px #31689b;
     transform: scale(1.05);
 }
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 
 /* Hover botão whatsapp */
 .btn-social button, .whats {
@@ -588,13 +514,11 @@ section.sobre .flex {
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #3030301d;
-    
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-    
 }
 
 .img-port {
@@ -605,17 +529,6 @@ section.portfolio .flex {
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
-    animation: fadeIn 3s ease-out;
-    
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .img-port:hover {
@@ -627,11 +540,6 @@ section.formulario {
     padding: 80px 4%;
 }
 
-.titulo {
-    
-    
-}
-
 form {
     max-width: 270px;
     margin: 0 auto;
@@ -641,7 +549,6 @@ form {
     gap: 10px;
     margin-top: 40px;
     padding-right: 20px;
-    
 }
 
 form input, form textarea {
@@ -790,38 +697,39 @@ footer .line-footer p a {
         display: block;
     }
 
-    /* responsividade */
-@media screen and (max-width: 1020px) {
     /* Main */
     section.topo-do-site .flex {
         gap: 40px;
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 40px 4%;
     }
 
+    
+
     .topo-do-site .txt-topo-site p {
-        text-align: center; /* Adicionado para centralizar o texto */
+        text-align: center;
         margin: 10px 0;
     }
 
-    .txt-topo-site h1 {
-        font-size: 22px;
-        line-height: 30px;
-        padding-top: 50px;
+    .topo-do-site h1 {
+        font-size: 24px;
+        line-height: 40px;
         text-align: center;
+        
     }
+    
+    
 
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
-}
 
     /* Sobre */
 
     section.sobre .flex {
-        gap: px;
+        gap: 40px;
     }
 
     section.sobre {
@@ -830,22 +738,19 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 20px;
+        font-size: 34px;
         line-height: 35px;
         text-align: center;
-        
-
-        
     }
 
   
 
     .txt-sobre p {
-        font-size: 15px;
+        font-size: 18px;
         /* Altere para o tamanho desejado */
-        text-align: center;
-    
-        
+        white-space: pre-line;
+        /* Adicionado para permitir quebras de linha automáticas */
+
     }
 
     .btn-social {
@@ -860,8 +765,12 @@ footer .line-footer p a {
     /* Especialidades*/
 
     section.especialidades {
-        padding: px ;
+        padding-bottom: 30px;
        
+    }
+
+    .especialidades h2 {
+        line-height: 38px;
     }
 
 
@@ -871,23 +780,12 @@ footer .line-footer p a {
 
     section.portfolio {
         padding: 80px 8%;
-        
     }
 
     .img-port {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
-        
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
     }
 
     section.portfolio .flex {
