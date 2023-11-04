@@ -438,6 +438,8 @@ section.sobre .flex {
     transform: scale(1.05);
 }
 
+
+
 /* Hover botão whatsapp */
 .btn-social button, .whats {
     width: 50px;
@@ -453,7 +455,14 @@ section.sobre .flex {
     /* Adicionado para aparecer 100% */
 }
 
-.sobre .txt-sobre .btn-social button:hover, .whats:hover {
+.sobre .txt-sobre .btn-social button:hover {
+    box-shadow: 0px 0px 8px #00ffea;
+    transform: scale(1.05);
+    opacity: 1;
+    /* Adicionado para aparecer 100% */
+}
+
+.btn-social button:hover, .whats:hover {
     box-shadow: 0px 0px 8px #4f9b31;
     transform: scale(1.05);
     opacity: 1;
@@ -508,6 +517,21 @@ section.sobre .flex {
     100% {
         top: 30px;
     }
+}
+
+.top {
+    position: fixed;
+    bottom: 750px; /* Ajuste conforme necessário */
+    right: 15px;
+    z-index: 99;
+    padding-right: 40px;
+    animation: jump 1s infinite;
+}
+
+@keyframes jump {
+    0% { bottom: 750px; }
+    50% { bottom: 770px; }
+    100% { bottom: 750px; }
 }
 
 /* Estilo do Portfolio */
