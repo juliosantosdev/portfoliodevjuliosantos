@@ -73,6 +73,7 @@ header {
     bottom: 40px;
     right: 50px;
     z-index: 9999;
+    animation: pulse 2s infinite, float 2s ease-in-out infinite;
 }
 
 /*Botão Orçamento */
@@ -274,6 +275,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site p {
+    color: #ffffff;
     font-size: 30px;
     margin: 40px 0;
 }
@@ -430,10 +432,36 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre .btn-social button:hover, .whats:hover {
-    box-shadow: 0px 0px 8px #31689b;
+    box-shadow: 0px 0px 8px #4f9b31;
     transform: scale(1.05);
     opacity: 1;
     /* Adicionado para aparecer 100% */
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(88, 155, 49, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(49,104,155, 0); /* Aumentado o tamanho da sombra do box para 20px */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(91, 155, 49, 0);
+  }
+}
+
+/* Animação de flutuação */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .fale-comigo {
