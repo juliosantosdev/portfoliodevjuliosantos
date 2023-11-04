@@ -8,6 +8,8 @@
     font-family: 'Jost', sans-serif;
 }
 
+
+
 /* Define a cor de fundo do corpo do documento como #23AEEB */
 body {
     background-color: #23AEEB;
@@ -284,8 +286,22 @@ section.topo-do-site .flex {
 .topo-do-site h1 {
     font-size: 62px;
     line-height: 70px;
-    animation: slideDown 2s ease-out;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
 
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
 
 .img-topo-site {
@@ -300,7 +316,7 @@ section.topo-do-site .flex {
     color: #ffffff;
     font-size: 30px;
     margin: 40px 0;
-    animation: slideDown 2s ease-out;
+    animation: slideInFromLeft 2s ease-out;
 }
 
 .topo-do-site .img-topo-site img {
@@ -346,9 +362,12 @@ h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
-    padding-top: ;
     
+
 }
+
+
+
 
 h2.titulo span {
     color: #000000;
@@ -431,10 +450,25 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 60px;
-    line-height: 40px;
+    font-size: 75px;
+    
     margin-bottom: 30px;
-    animation: slideDown 2s ease-out;
+    overflow: hidden; /* Garante que o texto fique oculto até ser "digitado" */
+    border-right: .15em solid orange; /* Simula o cursor piscando */
+    white-space: nowrap; /* Mantém o texto em uma única linha */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(13, 219, 209); }
 }
 
 .sobre .txt-sobre h2 span {
@@ -784,7 +818,7 @@ footer .line-footer p a {
     /* Sobre */
 
     section.sobre .flex {
-        gap: 40px;
+        gap: px;
     }
 
     section.sobre {
@@ -793,20 +827,22 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 34px;
+        font-size: 19px;
         line-height: 35px;
         text-align: center;
+
         
     }
 
   
 
     .txt-sobre p {
-        font-size: 18px;
+        font-size: 15px;
         /* Altere para o tamanho desejado */
         white-space: pre-line;
         /* Adicionado para permitir quebras de linha automáticas */
-
+    
+        
     }
 
     .btn-social {
