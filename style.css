@@ -790,6 +790,8 @@ footer .line-footer p a {
         display: block;
     }
 
+    /* responsividade */
+@media screen and (max-width: 1020px) {
     /* Main */
     section.topo-do-site .flex {
         gap: 40px;
@@ -800,7 +802,7 @@ footer .line-footer p a {
     }
 
     .topo-do-site .txt-topo-site p {
-        
+        text-align: center; /* Adicionado para centralizar o texto */
         margin: 10px 0;
     }
 
@@ -814,6 +816,7 @@ footer .line-footer p a {
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
+}
 
     /* Sobre */
 
@@ -827,10 +830,10 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 19px;
+        font-size: 20px;
         line-height: 35px;
         text-align: center;
-        text-align: justify;
+        
 
         
     }
@@ -840,9 +843,7 @@ footer .line-footer p a {
     .txt-sobre p {
         font-size: 15px;
         /* Altere para o tamanho desejado */
-        text-align: justify;
-
-        /* Adicionado para permitir quebras de linha automáticas */
+        text-align: center;
     
         
     }
