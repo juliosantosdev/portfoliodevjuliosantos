@@ -9,18 +9,24 @@
 
 body {
     background-color: #23AEEB;
+    height: 100vh;
 }
 
-
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 /* Menu */
 header {
+    
     background-color: black;
     box-shadow: 0px 3px 10px #464646;
 }
 
 .nav-bar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
@@ -38,9 +44,12 @@ header {
 }
 
 .nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    list-style-type: none;
+}
+
+.nav-list ul li {
+    display: inline-block;
+    padding: 0 40px;
 }
 
 .nav-item {
@@ -58,6 +67,7 @@ header {
 /* Houver dos Itens do Menu */
 .nav-link:hover {
     color: #23AEEB;
+    
 }
 
 
@@ -267,13 +277,9 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-    font-size: 59px;
+    font-size: 58px;
     line-height: 70px;
-    overflow: hidden; /* Garante que o texto fique oculto até ser "digitado" */
-    border-right: .15em solid orange; /* Simula o cursor piscando */
-    white-space: nowrap;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    
+         
 }
 
 /* Animação de digitação */
@@ -309,22 +315,6 @@ section.topo-do-site .flex {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
-
-/* Consulta de mídia para diminuir o tamanho da fonte quando a largura da tela for menor ou igual a 1020px */
-@media (max-width: 1020px) {
-    .topo-do-site h1 {
-        font-size: 50px;
-        /* Altere para o tamanho desejado */
-        line-height: 58px;
-        /* Altere para o tamanho desejado */
-    }
-
-    .topo-do-site .txt-topo-site p {
-        font-size: 20px;
-        /* Altere para o tamanho desejado */
-    }
-}
-
 
 /* Especialidades*/
 .flex {
@@ -407,8 +397,8 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 60px;
-    line-height: 40px;
+    font-size: 70px;
+    line-height: 80px;
     margin-bottom: 30px;
     
 }
@@ -665,23 +655,25 @@ footer .line-footer p a {
     .sobre .txt-sobre .btn-social button:hover {
         box-shadow: 0px 0px 8px #00ffea;
         transform: scale(1.05);
-        opacity: 1;
-        /* Adicionado para aparecer 100% */
     }
     
     .flex {
         flex-direction: column;
+        align-items: center;
     }
 
     h2.titulo {
         font-size: 34px;
         line-height: 30px;
-
     }
 
     /* Menu do site*/
+    .nav-list{
+        display: none;
+    }
+
     .nav-bar {
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 2rem;
     }
 
     .nav-item {
@@ -701,7 +693,7 @@ footer .line-footer p a {
         background-color: transparent;
         border: none;
         cursor: pointer;
-        padding: 40px;
+        padding: 10px;
     }
 
     .mobile-menu ul {
@@ -721,33 +713,33 @@ footer .line-footer p a {
     }
 
     /* Main */
+    
+    .topo-do-site h1 {
+        font-size: 34px;
+        text-align: center;
+        line-height: 40px;
+    }
     section.topo-do-site .flex {
         gap: 40px;
     }
 
     section.topo-do-site {
-        padding: 40px 4%;
+        padding: 20px 8%;
     }
-
-    
 
     .topo-do-site .txt-topo-site p {
         text-align: center;
         margin: 10px 0;
+        font-size: 18px;
     }
 
-    .topo-do-site h1 {
-        font-size: 24px;
-        line-height: 40px;
-        text-align: center;
-        
-    }
-    
     
 
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
+
+   
 
     /* Sobre */
 
@@ -757,7 +749,6 @@ footer .line-footer p a {
 
     section.sobre {
         padding: 80px 8%;
-
     }
 
     .sobre .txt-sobre h2 {
@@ -766,14 +757,8 @@ footer .line-footer p a {
         text-align: center;
     }
 
-  
-
     .txt-sobre p {
         font-size: 18px;
-        /* Altere para o tamanho desejado */
-        white-space: pre-line;
-        /* Adicionado para permitir quebras de linha automáticas */
-
     }
 
     .btn-social {
@@ -781,23 +766,21 @@ footer .line-footer p a {
     }
 
     .img-sobre img {
-        display: none;
+        display: block;
         width: 100%;
+        margin: 0 auto;
     }
 
     /* Especialidades*/
 
     section.especialidades {
         padding-bottom: 30px;
-       
     }
 
     .especialidades h2 {
         line-height: 38px;
+        text-align: center;
     }
-
-
-
 
     /* Portfolio */
 
@@ -831,7 +814,6 @@ footer .line-footer p a {
 
     .formulario {
         text-align: center; 
-        
     }
 
     .formulario h2 {
