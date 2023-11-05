@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Jost', sans-serif;
 }
 
@@ -242,6 +243,11 @@ header {
 
 
 /* Estilo do Main */
+
+.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-img-port1, .efeito-img-port2, .efeito-img-port3, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar, .tituloform {
+    visibility: hidden;
+}
+
 .txt-topo-site {
     color: #ffffff;
 }
@@ -519,21 +525,6 @@ section.sobre .flex {
     }
 }
 
-.top {
-    position: fixed;
-    bottom: 750px; /* Ajuste conforme necessário */
-    right: 15px;
-    z-index: 99;
-    padding-right: 40px;
-    animation: jump 1s infinite;
-}
-
-@keyframes jump {
-    0% { bottom: 750px; }
-    50% { bottom: 770px; }
-    100% { bottom: 750px; }
-}
-
 /* Estilo do Portfolio */
 section.portfolio {
     padding: 80px 4%;
@@ -564,6 +555,8 @@ section.formulario {
     padding: 80px 4%;
 }
 
+
+
 form {
     max-width: 270px;
     margin: 0 auto;
@@ -572,7 +565,7 @@ form {
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-    padding-right: 20px;
+    
 }
 
 form input, form textarea {
@@ -593,9 +586,7 @@ form textarea {
     max-width: 600px;
 }
 
-.btn-enviar {
-    padding-left: 30px;
-}
+
 
 form .btn-enviar {
     margin-top: 20px;
@@ -671,6 +662,13 @@ footer .line-footer p a {
 @media screen and (max-width: 1020px) {
 
     /* Geral */
+    .sobre .txt-sobre .btn-social button:hover {
+        box-shadow: 0px 0px 8px #00ffea;
+        transform: scale(1.05);
+        opacity: 1;
+        /* Adicionado para aparecer 100% */
+    }
+    
     .flex {
         flex-direction: column;
     }
@@ -678,6 +676,7 @@ footer .line-footer p a {
     h2.titulo {
         font-size: 34px;
         line-height: 30px;
+
     }
 
     /* Menu do site*/
@@ -831,9 +830,11 @@ footer .line-footer p a {
     }
 
     .formulario {
-        text-align: center;
+        text-align: center; 
+        
+    }
 
-
-    
+    .formulario h2 {
+        line-height: 38px;
     }
 }

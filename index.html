@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="Images/pngegg.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    <script src="reveal.js" defer></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -58,7 +61,7 @@
         <section id="topo-do-site" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-site">
+                    <div class="txt-topo-site efeito-txt-topo">
                         <h1>Olá, sou um <span>Programador</span> Web.</h1>
                         <p> Transformo idéias em realidade com código limpo e design responsivo. Minha missão é
                             criar soluções digitais eficientes que impulsionem o seu negócio. Explore meu
@@ -68,7 +71,7 @@
                                     Projetos</a></button>
                         </div>
                     </div>
-                    <div class="img-topo-site">
+                    <div class="img-topo-site efeito-img-topo">
                         <img src="Images/imagem3.png" alt="">
                     </div>
                 </div>
@@ -79,7 +82,7 @@
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES:</span></h2>
                 <div class="flex">
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades1">
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
                         <p class="texto-box">
@@ -88,7 +91,7 @@
                             visualmente atraentes.
                         </p>
                     </div>
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades2">
                         <i class="bi bi-robot"></i>
                         <h3>Chatbot</h3>
                         <p class="texto-box">
@@ -98,7 +101,7 @@
                         </p>
                     </div>
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades3">
                         <i class="bi bi-wordpress"></i>
                         <h3>Wordpress</h3>
                         <p class="texto-box">
@@ -117,13 +120,13 @@
             
             <div class="interface">
                 <div class="flex">
-                    <div class="video-sobre">
+                    <div class="video-sobre efeito-video-sobre">
                         <video preload="auto" autoplay loop muted>
                             <source src="video/menor.mp4">
                         </video>
                     </div>
 
-                    <div class="txt-sobre">
+                    <div class="txt-sobre efeito-txt-sobre" >
                         <h2>Muito prazer, <span>eu me chamo Júlio Santos</span>.</h2>
                         <p> Sou um profissional da área de tecnologia. Um Desenvolvedor Web certificado, com diversos cursos em instituições como SENAC, Codi Academy e Udemy onde pude aprimorar minha experiência em HTML5, CSS3, JavaScript, Wordpress e entre outras tecnologias. Além disso, estou me formando na faculdade de Análise e Desenvolvimento de Sistemas, onde aprendo ainda mais sobre as técnicas e teorias da minha profissão. Estou aqui para transformar sua ideia em solução digital para sua empresa, com código limpo e um site responsivo, que se adapta a todas as telas! Se quiser conhecer mais sobre meu trabalho, logo abaixo estão algumas das minhas redes-sociais:
                         </p>
@@ -149,9 +152,9 @@
                 <h2 class="titulo">MEU <span>PORTFÓLIO:</span></h2>
 
                 <div class="flex">
-                    <a href="https://coroatattoo.netlify.app/"><div  class="img-port" style="background-image: url(Images/site-coroatattoo.png);"></div></a>
-                    <div class="img-port" style="background-image: url(Images/Site-agencia.png);"></div>
-                    <div class="img-port" style="background-image: url(Images/screencapture-DevJulioSantos.png);"></div>
+                    <a href="https://coroatattoo.netlify.app/"><div  class="img-port efeito-img-port1" style="background-image: url(Images/site-coroatattoo.png);"></div></a>
+                    <div class="img-port efeito-img-port2" style="background-image: url(Images/Site-agencia.png);"></div>
+                    <div class="img-port efeito-img-port3" style="background-image: url(Images/screencapture-DevJulioSantos.png);"></div>
 
 
                 </div>
@@ -160,19 +163,19 @@
 
         <section id="formulario" class="formulario">
             <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <h2 class="titulo">ME CONTA MAIS <span>SOBRE SUA IDEIA.</span></h2>
 
                 <form action="https://api.staticforms.xyz/submit" method="post">
                     <input type="hidden" name="accessKey" value="ccda1a8a-c8ae-4d72-9282-c87675c373af">
                     <input type="hidden" name="redirectTo" value="https://juliosantosdev.github.io/paginaobrigado/"> <!-- Optional -->
         
-                    <input type="text" name="$nome" id="nome" placeholder="Seu nome completo:" required>
-                    <input type="text" name="$email" id="email" placeholder="Seu e-mail:" required>
-                    <input type="text" name="$celular" id="celular" placeholder="Seu celular:" required>
-                    <textarea name="message" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <input class="efeito-nome" type="text" name="$nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input class="efeito-email" type="text" name="$email" id="email" placeholder="Seu e-mail:" required>
+                    <input class="efeito-celular" type="text" name="$celular" id="celular" placeholder="Seu celular:" required>
+                    <textarea class="efeito-mensagem" name="message" id="mensagem" placeholder="Sua mensagem" required></textarea>
                     
                                       
-                    <div class="btn-enviar">
+                    <div class="btn-enviar efeito-btn-enviar">
                         <input type="submit" value="ENVIAR">
                     </div>
                 </form>
@@ -218,13 +221,9 @@
         </a>
         <p class="fale-comigo">Fale comigo</p>
     </div>
-    <div class="top">
-        <a href="javascript:void(0);" onclick="topFunction()" id="myBtn">
-            <img src="Images/back-to-top.png" width="50" alt="Volte para o topo!" title="Volte para o topo!">
-        </a>
-    </div>
+    
 
-    <script src="script.js"></script>
+    
 </body>
 
 </html>
