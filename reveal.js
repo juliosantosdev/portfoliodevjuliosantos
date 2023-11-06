@@ -65,32 +65,9 @@ revelar.reveal('.efeito-video-sobre',
     origin: 'left'
 })
 
-// Efeito Portfolio//
 
-revelar.reveal('.efeito-img-port1',
-{
-    duration: 2000,
-    distance: '90px',
-    origin: 'top',
-    delay: 500
-})
 
-revelar.reveal('.efeito-img-port2',
-{
-    duration: 2000,
-    distance: '90px',
-    origin: 'top',
-    delay: 1000
-})
 
-revelar.reveal('.efeito-img-port3',
-{
-    duration: 2000,
-    distance: '90px',
-    origin: 'top',
-    delay: 1500
-    
-})
 
 // Efeito Formulario//
 

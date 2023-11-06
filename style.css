@@ -12,14 +12,14 @@ body {
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
 /* Menu */
 header {
-    
+
     background-color: black;
     box-shadow: 0px 3px 10px #464646;
 }
@@ -45,6 +45,8 @@ header {
 
 .nav-list ul {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-list ul li {
@@ -67,7 +69,7 @@ header {
 /* Houver dos Itens do Menu */
 .nav-link:hover {
     color: #23AEEB;
-    
+
 }
 
 
@@ -254,7 +256,7 @@ header {
 
 /* Estilo do Main */
 
-.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-img-port1, .efeito-img-port2, .efeito-img-port3, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar, .tituloform {
+.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar {
     visibility: hidden;
 }
 
@@ -279,20 +281,10 @@ section.topo-do-site .flex {
 .topo-do-site h1 {
     font-size: 58px;
     line-height: 70px;
-         
 }
 
-/* Animação de digitação */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
 
-/* Animação do cursor piscando */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-}
+
 
 
 .img-topo-site {
@@ -307,7 +299,7 @@ section.topo-do-site .flex {
     color: #ffffff;
     font-size: 30px;
     margin: 40px 0;
-    
+
 }
 
 .topo-do-site .img-topo-site img {
@@ -333,7 +325,7 @@ h2.titulo span {
 }
 
 section.especialidades {
-    padding: 20px ;
+    padding: 20px;
     text-align: center;
     justify-content: center;
     padding-top: 90px;
@@ -350,7 +342,7 @@ section.especialidades .flex {
     border: 2px solid #fff;
     margin-top: 45px;
     transition: .2s;
-    
+
 }
 
 .especialidades .especialidades-box:hover {
@@ -397,11 +389,13 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 70px;
+    font-size: 34px;
     line-height: 80px;
     margin-bottom: 30px;
-    
+
 }
+
+
 
 .sobre .txt-sobre h2 span {
     color: #000000;
@@ -426,7 +420,7 @@ section.sobre .flex {
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
-    
+
 }
 
 .sobre .txt-sobre .btn-social button:hover {
@@ -467,28 +461,33 @@ section.sobre .flex {
 
 /* Animação de pulsação */
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(88, 155, 49, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 20px rgba(49,104,155, 0); /* Aumentado o tamanho da sombra do box para 20px */
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(91, 155, 49, 0);
-  }
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 155, 49, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(49, 104, 155, 0);
+        /* Aumentado o tamanho da sombra do box para 20px */
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(91, 155, 49, 0);
+    }
 }
 
 /* Animação de flutuação */
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .fale-comigo {
@@ -555,7 +554,7 @@ form {
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-    
+
 }
 
 form input, form textarea {
@@ -601,7 +600,7 @@ form .btn-enviar input:hover {
 }
 
 /*Estilo Obrigado */
-.btn-voltarinicio{
+.btn-voltarinicio {
     padding-top: 40px;
 }
 
@@ -611,9 +610,11 @@ form .btn-enviar input:hover {
     flex: 1 0 auto;
     padding-top: 150px;
 }
+
 .footer {
     flex-shrink: 0;
 }
+
 .site {
     display: flex;
     flex-direction: column;
@@ -627,7 +628,7 @@ footer {
     box-shadow: 0 0 40px 10px #464646;
     background-color: #000;
     flex-shrink: 0;
-    
+
 }
 
 footer .flex {
@@ -656,7 +657,7 @@ footer .line-footer p a {
         box-shadow: 0px 0px 8px #00ffea;
         transform: scale(1.05);
     }
-    
+
     .flex {
         flex-direction: column;
         align-items: center;
@@ -668,7 +669,7 @@ footer .line-footer p a {
     }
 
     /* Menu do site*/
-    .nav-list{
+    .nav-list {
         display: none;
     }
 
@@ -713,12 +714,13 @@ footer .line-footer p a {
     }
 
     /* Main */
-    
+
     .topo-do-site h1 {
         font-size: 34px;
         text-align: center;
         line-height: 40px;
     }
+
     section.topo-do-site .flex {
         gap: 40px;
     }
@@ -733,13 +735,13 @@ footer .line-footer p a {
         font-size: 18px;
     }
 
-    
+
 
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
 
-   
+
 
     /* Sobre */
 
@@ -798,6 +800,8 @@ footer .line-footer p a {
         gap: 30px;
     }
 
+    
+
     /* Rodapé */
 
     footer .flex {
@@ -813,7 +817,7 @@ footer .line-footer p a {
     }
 
     .formulario {
-        text-align: center; 
+        text-align: center;
     }
 
     .formulario h2 {
