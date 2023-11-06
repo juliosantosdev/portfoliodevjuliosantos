@@ -252,7 +252,7 @@ header {
 
 
 
-.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar {
+.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar, .efeito-insta, .efeito-linkedin, .efeito-git, .efeito-whats {
     visibility: hidden;
 }
 
