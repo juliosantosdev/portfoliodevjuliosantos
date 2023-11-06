@@ -252,7 +252,7 @@ header {
 
 
 
-.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar, .efeito-insta, .efeito-linkedin, .efeito-git, .efeito-whats {
+.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar, .efeito-insta, .efeito-linkedin, .efeito-git, .efeito-whats  {
     visibility: hidden;
 }
 
@@ -291,7 +291,7 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
     color: #ffffff;
     font-size: 30px;
-    margin: 40px 0;
+    margin: 20px 0;
 
 }
 
@@ -526,7 +526,9 @@ section.portfolio .flex {
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
+   
 }
+
 
 .img-port:hover {
     background-position: 100% 100%;
@@ -644,10 +646,7 @@ footer .line-footer p a {
 
 /* responsividade */
 
-@media screen and (max-width: 1900px) 
-.sobre .txt-sobre h2 {
-line-he
-}
+
 
 
 
@@ -720,9 +719,11 @@ line-he
     /* Main */
 
     .topo-do-site h1 {
-        font-size: 34px;
-        text-align: center;
+        
+        font-size: 40px;
         line-height: 40px;
+        text-align: center;
+        padding-top: 50px;
     }
 
     section.topo-do-site .flex {
@@ -731,19 +732,19 @@ line-he
 
     section.topo-do-site {
         padding: 1px 1%;
+        text-align: center;
     }
 
     .topo-do-site .txt-topo-site p {
         text-align: center;
-        margin: 10px 0;
+        margin: 10px 50px;
         font-size: 18px;
+        
     }
 
 
 
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
+
 
 
 
@@ -765,6 +766,7 @@ line-he
 
     .txt-sobre p {
         font-size: 18px;
+        margin: 40px;
     }
 
     .btn-social {
@@ -883,16 +885,14 @@ line-he
 
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1121px) {
     .topo-do-site h1 {
         font-size: 55px;
         line-height: 70px;
         text-align: center;
     }
 
-    .img-topo-site {
-        border-radius: 80px;
-    }
+ 
 
     .topo-do-site h1 span {
         color: rgb(0, 0, 0);
@@ -911,6 +911,22 @@ line-he
 
     }
 }
+
+@media screen and (max-width: 820px) {
+    .topo-do-site h1 {
+        
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .txt-topo-site p {
+        margin: 50px 50px;
+    }
+}
+
+
 
 @media screen and (max-width: 390px) {
 
@@ -940,7 +956,7 @@ line-he
     .topo-do-site .txt-topo-site p {
         color: #ffffff;
         font-size: 19px;
-        margin: 40px 0;
+        margin: 15px 20px;
 
     }
 
@@ -978,3 +994,75 @@ line-he
 
 }
 
+@media screen and (max-width: 414px) {
+
+    /* Estilo do Main */
+    .txt-topo-site {
+        color: #ffffff;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img-topo-site {
+        border-radius: 80px;
+    }
+
+    .topo-do-site h1 span {
+        color: rgb(0, 0, 0);
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: #ffffff;
+        font-size: 19px;
+        margin: 15px 20px;
+
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* Especialidades*/
+
+    section.especialidades {
+        padding-bottom: 30px;
+    }
+
+    .especialidades h2 {
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    section.especialidades {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        padding-top: px;
+    }
+
+    .whats {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 280px){
+    .video-sobre {
+        display: none;
+    }
+
+}

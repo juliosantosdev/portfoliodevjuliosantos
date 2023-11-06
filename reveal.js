@@ -75,7 +75,7 @@ revelar.reveal('.efeito-insta',
 {
     duration: 2000,
     distance: '90px',
-    delay: 3000
+    delay: 2000
     
 })
 
@@ -83,7 +83,7 @@ revelar.reveal('.efeito-linkedin',
 {
     duration: 2000,
     distance: '90px',
-    delay: 3500
+    delay: 2500
     
 })
 
@@ -91,7 +91,7 @@ revelar.reveal('.efeito-git',
 {
     duration: 2000,
     distance: '90px',
-    delay: 4000
+    delay: 3000
     
 })
 
@@ -99,14 +99,9 @@ revelar.reveal('.efeito-whats',
 {
     duration: 2000,
     distance: '90px',
-    delay: 4500
+    delay: 3500
     
 })
-
-
-
-
-
 
 
 // Efeito Formulario//
