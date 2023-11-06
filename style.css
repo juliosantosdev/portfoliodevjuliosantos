@@ -252,14 +252,11 @@ header {
 
 
 
-
-
-/* Estilo do Main */
-
 .efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-video-sobre, .efeito-nome, .efeito-celular, .efeito-email, .efeito-mensagem, .efeito-btn-enviar {
     visibility: hidden;
 }
 
+/* Estilo do Main */
 .txt-topo-site {
     color: #ffffff;
 }
@@ -282,10 +279,6 @@ section.topo-do-site .flex {
     font-size: 58px;
     line-height: 70px;
 }
-
-
-
-
 
 .img-topo-site {
     border-radius: 80px;
@@ -317,7 +310,7 @@ h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
-    padding-top: ;
+
 }
 
 h2.titulo span {
@@ -390,7 +383,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre h2 {
     font-size: 34px;
-    line-height: 80px;
+    line-height: 40px;
     margin-bottom: 30px;
 
 }
@@ -650,6 +643,17 @@ footer .line-footer p a {
 }
 
 /* responsividade */
+
+@media screen and (max-width: 1900px) 
+.sobre .txt-sobre h2 {
+line-he
+}
+
+
+
+
+
+
 @media screen and (max-width: 1020px) {
 
     /* Geral */
@@ -726,7 +730,7 @@ footer .line-footer p a {
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 1px 1%;
     }
 
     .topo-do-site .txt-topo-site p {
@@ -754,7 +758,7 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 34px;
+        font-size: 25px;
         line-height: 35px;
         text-align: center;
     }
@@ -780,6 +784,7 @@ footer .line-footer p a {
     }
 
     .especialidades h2 {
+        font-size: 26px;
         line-height: 38px;
         text-align: center;
     }
@@ -800,7 +805,7 @@ footer .line-footer p a {
         gap: 30px;
     }
 
-    
+
 
     /* Rodapé */
 
@@ -824,3 +829,152 @@ footer .line-footer p a {
         line-height: 38px;
     }
 }
+
+@media screen and (max-width: 1302px) {
+    .login-button {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* Menu do site*/
+    .nav-list {
+        display: none;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 2rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    /* Menu do site no celular*/
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 1125px) {
+    .topo-do-site h1 {
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .img-topo-site {
+        border-radius: 80px;
+    }
+
+    .topo-do-site h1 span {
+        color: rgb(0, 0, 0);
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: #ffffff;
+        font-size: 25px;
+        margin: 40px 0;
+        text-align: center;
+
+    }
+
+    .topo-do-site .img-topo-site img {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    /* Estilo do Main */
+    .txt-topo-site {
+        color: #ffffff;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img-topo-site {
+        border-radius: 80px;
+    }
+
+    .topo-do-site h1 span {
+        color: rgb(0, 0, 0);
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: #ffffff;
+        font-size: 19px;
+        margin: 40px 0;
+
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* Especialidades*/
+
+    section.especialidades {
+        padding-bottom: 30px;
+    }
+
+    .especialidades h2 {
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    section.especialidades {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        padding-top: px;
+    }
+
+    .whats {
+        display: none;
+    }
+
+
+
+}
+
